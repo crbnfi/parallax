@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Carbon Parallax Demo</title>
+  <style type="text/css">
+    #container { height: 3500px; }
+    .parallax-element { position: absolute; width: 100px; height: 100px; top: 200px; left: 50%; margin-left: -50px; }
+    .parallax-element-1 { background-color: red; }
+    .parallax-element-2 { background-color: green; }
+    .parallax-element-3 { background-color: blue; }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <div class="parallax-element parallax-element-1" data-friction="-0.9"></div>
+  <div class="parallax-element parallax-element-2" data-friction="0.9"></div>
+  <div class="parallax-element parallax-element-3" data-friction="-1.5"></div>
+</div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+<script type="text/javascript" src="../crbn.parallax.js"></script>
+<script type="text/javascript">
+  $('#container').parallax({ alwaysInView: false, debug: true });
+</script>
+</body>
+</html>
